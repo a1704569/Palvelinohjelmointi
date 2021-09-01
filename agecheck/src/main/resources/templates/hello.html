@@ -1,0 +1,15 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+	<title>Server Programming with Spring Boot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+	<body>
+		<div th:if="${age} &gt; 17">
+		<p th:text="'Alaikäinen'"/>
+		</div>
+		<div th:if="${age} &lt; 17">
+		<p th:text:="'Tervetuloa '+ ${name}"/></div>
+	</body>
+
+</html>
