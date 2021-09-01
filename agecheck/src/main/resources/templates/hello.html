@@ -5,11 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 	<body>
-		<div th:if="${age} &gt; 17">
-		<p th:text="'Alaikäinen'"/>
+		<div th:if="${age} &gt; 16">
+		<p th:text="'Tervetuloa ' +${name}"/>
 		</div>
 		<div th:if="${age} &lt; 17">
-		<p th:text:="'Tervetuloa '+ ${name}"/></div>
+		Alaikäinen
+		</div>
 	</body>
 
 </html>
